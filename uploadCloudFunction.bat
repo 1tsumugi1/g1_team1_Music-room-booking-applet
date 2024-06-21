@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-9giqv72fa52b32c2 --n quickstartFunctions --r --project "E:\综合实训项目\g1_team1_Music-room-booking-applet" --report_first --report
