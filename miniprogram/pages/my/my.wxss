@@ -1,0 +1,31 @@
+.user_item1_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.user_item1_box image{
+   width: 120rpx;
+   height: 120rpx;
+   border-radius: 50%;
+}
+.user_box{
+  background-color: white;
+  
+  padding: 30rpx;
+}
+.study_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50rpx;
+}
+.study_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.study_item_2{
+  color: #7f7f7f;
+  font-size: 10pt;
+}

@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/my/my",
+    "pages/read_news/read_news",
+    "pages/music_yuyue/music_yuyue",
+    "pages/goyuyue/goyuyue",
+    "pages/myAppointments/myAppointments"
+   
+    
+    
+    
+   
+    
+   
+   
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "中美音乐室预约系统",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#CC0000",
+    "list":[
+      {
+    "pagePath": "pages/index/index",
+    "text": "首页",
+    "iconPath": "images/首页.png",
+    "selectedIconPath": "images/首页 (1).png"
+    
+    },
+    {
+      "pagePath":"pages/news/news",
+      "text":"公告",
+      "iconPath": "images/公告.png",
+    "selectedIconPath": "images/公告 (1).png"
+     
+      },
+      {
+        "pagePath":"pages/my/my",
+        "text":"我的",
+        "iconPath": "images/我的.png",
+        "selectedIconPath": "images/我的 (1).png"
+        }
+  ] 
+  },
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index",
+  "van-cell-group": "@vant/weapp/cell-group/index",
+  "van-button": "@vant/weapp/button/index",
+  "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-field": "@vant/weapp/field/index"
+ 
+  },
+  
+    "plugins": {
+      "myPlugin": {
+        "version": "2.2.1",
+        "provider": "wx6b6cb15df2836ebe"
+      }
+    
+  }
+  
+  
+ 
+}

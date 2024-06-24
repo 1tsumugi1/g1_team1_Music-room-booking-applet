@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="header">
+    <text>我的预约</text>
+  </view>
+  <view wx:if="{{appointments.length == 0}}" class="no-appointments">
+    <text>没有预约信息</text>
+  </view>
+  <view wx:for="{{appointments}}" wx:key="id" class="appointment">
+    <view class="appointment-item">
+      <text>场地名称: {{item.place}}</text>
+      <text>预约日期: {{item.date}}</text>
+      <text>预约时间: {{item.time}}</text>
+      <text>预约状态: {{item.status}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,124 @@
+<!-- 每个乐器有三种状态 未选择 有人 已选择 -->
+<view class="room_top_box">
+  <view class="room_top_item">
+     <image class="room_top_image" src="../../images/蓝.png" ></image>
+     <text class="room_item">有人</text>
+  </view>
+  <view class="room_top_item">
+     <image class="room_top_image" src="../../images/灰.png" ></image>
+     <text class="room_item">空闲</text>
+  </view>
+  <view class="room_top_item">
+     <image class="room_top_image" src="../../images/红.png" ></image>
+     <text class="room_item">我的选择</text>
+  </view>
+</view>
+
+<view class="room_name"> 
+  <text>{{list.name}}</text>
+</view>
+
+<!-- 乐器列表 -->
+<!-- 预约1 -->
+<block wx:if="{{list.id==1}}">
+<view class="instrument_box">
+  <view class="instrument_top_item" bindtap="chooseInstrument1" data-index="0">
+     <image class="instrument_top_image" src="../../images/灰色钢琴.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="1">
+     <image class="instrument_top_image" src="../../images/灰色吉他.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="2">
+     <image class="instrument_top_image" src="../../images/灰色架子鼓.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="3">
+     <image class="instrument_top_image" src="../../images/灰色小提琴.png" ></image>
+  </view>
+</view>
+</block>
+<!-- 预约2 -->
+<block wx:if="{{list.id==2}}">
+<view class="instrument_box">
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="piano2">
+     <image class="instrument_top_image" src="../../images/灰色钢琴.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="guitar2">
+     <image class="instrument_top_image" src="../../images/灰色吉他.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="drums2">
+     <image class="instrument_top_image" src="../../images/灰色架子鼓.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="violin2">
+     <image class="instrument_top_image" src="../../images/灰色小提琴.png" ></image>
+  </view>
+</view>
+</block>
+<!-- 预约3 -->
+<block wx:if="{{list.id==3}}">
+<view class="instrument_box">
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="piano3">
+     <image class="instrument_top_image" src="../../images/灰色钢琴.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="guitar3">
+     <image class="instrument_top_image" src="../../images/灰色吉他.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="drums3">
+     <image class="instrument_top_image" src="../../images/灰色架子鼓.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="violin3">
+     <image class="instrument_top_image" src="../../images/灰色小提琴.png" ></image>
+  </view>
+</view>
+</block>
+<!-- 预约4 -->
+<block wx:if="{{list.id==4}}">
+<view class="instrument_box">
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="piano4">
+     <image class="instrument_top_image" src="../../images/灰色钢琴.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="guitar4">
+     <image class="instrument_top_image" src="../../images/灰色吉他.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="drums4">
+     <image class="instrument_top_image" src="../../images/灰色架子鼓.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="violin4">
+     <image class="instrument_top_image" src="../../images/灰色小提琴.png" ></image>
+  </view>
+</view>
+</block>
+<!-- 预约5 -->
+<block wx:if="{{list.id==5}}">
+<view class="instrument_box">
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="piano5">
+     <image class="instrument_top_image" src="../../images/灰色钢琴.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="guitar5">
+     <image class="instrument_top_image" src="../../images/灰色吉他.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="drums5">
+     <image class="instrument_top_image" src="../../images/灰色架子鼓.png" ></image>
+  </view>
+  <view class="instrument_top_item"bindtap="chooseInstrument1" data-index="violin5">
+     <image class="instrument_top_image" src="../../images/灰色小提琴.png" ></image>
+  </view>
+</view>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 预约按钮 -->
+<view class="submit" >
+  <van-button size='large' round  color="linear-gradient(to right, #4bb0ff, #6149f6)">
+  立即预约
+</van-button>
+</view>

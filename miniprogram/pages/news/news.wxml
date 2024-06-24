@@ -1,0 +1,53 @@
+<!--轮播图区域-->
+<!-- <view class="swiper">
+ <swiper autoplay 
+          interval="4000" 
+          indicator-dots 
+          circular="true"
+          indicator-color="#fff"
+          indicator-active-color="#f3514f"
+  >
+   <swiper-item>
+     <image src="../../images/轮播图1.png" mode=""/>
+   </swiper-item>
+   <swiper-item>
+     <image src="../../images/轮播图2.png" mode=""/>
+   </swiper-item>
+   <swiper-item>
+     <image src="../../images/轮播图3.png" mode=""/>
+   </swiper-item>
+ </swiper>    
+</view> -->
+<!-- src：图片资源地址
+mode：图片裁剪缩放模式
+show-menu-longress：长安展示菜单 -->
+<!-- <image src="../../images/轮播图1.png" mode="aspectFit" show-menu-by-longpress="lazy-load"/> -->
+
+<!-- 轮播图区域 -->
+<swiper indicator-dots="true" autoplay="true" circular="true" indicator-color="#fff">
+  <swiper-item wx:for="{{list}}" wx:key="index">
+    <image style="width: 100%;height: 380rpx;" mode= src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 公告区域 -->
+<view class="news_box" wx:for="{{news}}" wx:key="index" bindtap="readnews" data-id="{{item._id}}" data-skan="{{item.skan}}">
+  <view class="news_item">
+    <view class="item1">
+     <view style="display: flex;flex-direction: row;align-items: center;">
+        <image style="width: 80rpx;height: 80rpx;border-radius: 50%;" src="{{item.av_images}}"></image> 
+        <text style="margin-left: 30rpx;color: #4169E1;font-weight: bold;">{{item.nick}}</text> 
+    </view>
+    <view>
+       <text>{{item.time}}</text>
+    </view>   
+    </view>
+    <view>
+       <image style="width: 100%;height: 320rpx;border-radius: 20rpx;" src="{{item.fe_image}}"></image>
+    </view>
+    <view class="item3">
+       <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>
+
+

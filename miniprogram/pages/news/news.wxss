@@ -1,0 +1,43 @@
+/* page{
+  height: 100vh;
+  background-color: #eeffee !important;
+}
+轮播图区域样式
+ .swiper{
+   swiper{
+   
+       height: 360rpx;
+       background-color: skyblue;
+    
+       swiper-item{
+         image{
+           width: 100%;
+           height: 100%;
+         }
+        &在sass中代表的是父选择器，引用的意思       swiper-item：first-child
+       
+      }
+   }
+ } */
+/* 新闻列表 */
+.news_box{
+  display: flex;
+  flex-direction: column;
+  margin: 30rpx 30rpx;
+}
+.news_item{
+  background-color: white;
+  
+  border-radius: 30rpx;
+}
+.item1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx;
+}
+.item3{
+  font-size: 12pt;
+  padding: 30rpx;
+}

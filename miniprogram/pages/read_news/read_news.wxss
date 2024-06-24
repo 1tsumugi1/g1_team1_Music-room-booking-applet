@@ -1,0 +1,9 @@
+/*浏览量*/
+.skan{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+  justify-content: right;
+  margin-bottom: 20rpx;
+}

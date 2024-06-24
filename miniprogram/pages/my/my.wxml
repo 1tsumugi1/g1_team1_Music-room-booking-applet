@@ -1,0 +1,49 @@
+<!-- 用户基本信息 -->
+<view class="user_box">
+<!-- 昵称头像 -->
+  <view class="user_item1_box">
+   <image src="{{user.avatarUrl}}"></image>
+   <text style="margin-top:12rpx ;font-weight: bold;">{{user.nickName}}</text>
+ </view>
+ <!-- 用户使用情况 -->
+   <view class="study_box">
+     <view class="study_item">
+   <text class="study_item_1">{{list.all_time}}小时</text>
+   <text class="study_item_2">使用时间</text>
+   </view>
+   <view class="study_item">
+      <text class="study_item_1">第{{list.pai}}</text>
+      <text class="study_item_2">排名</text>
+   </view><view class="study_item">
+      <text class="study_item_1">{{list.maxlong_time}}小时</text>
+      <text class="study_item_2">单日最长</text>
+   </view>
+   </view>
+</view>
+
+<!-- 个人用户界面布局 -->
+<view class='operate'>
+  <view class="ch_item">
+      <van-cell icon="location-o" title="我的预约" url='' size='large' is-link class='my-appointments' bindtap="goToMyAppointments" wx:if="{{NickName != '请登录'}}" />
+   </view>
+
+   <view class="ch_item">
+      <van-cell icon="location-o" title="我的积分" url='' value='{{list.number}}' size='large' is-link />
+   </view>
+   <view class="ch_item">
+      <van-cell icon="location-o" title="使用规则" url='' size='large' is-link />
+   </view>
+  
+   <view class="ch_item">
+      <van-cell icon="location-o" bindtap="cancledenglu" title="解除绑定" url='' size='large' is-link />
+   </view>
+   <view class="ch_item" bindtap="denglus">
+      <van-cell icon="location-o" title="授权登录" url='' size='large' is-link />
+   </view>
+</view>
+
+
+
+
+
+

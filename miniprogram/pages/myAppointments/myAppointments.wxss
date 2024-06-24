@@ -1,0 +1,24 @@
+.container {
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.no-appointments {
+  text-align: center;
+  margin-top: 50px;
+  color: #888;
+}
+
+.appointment {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.appointment-item {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,6 @@
+<rich-text nodes="{{list.content}}"></rich-text>
+
+<view class="skan">
+  <van-icon name="browsing-history-o" size="50rpx"/>
+  <text style="margin-left:10rpx;">{{list.skan}}</text>
+</view>

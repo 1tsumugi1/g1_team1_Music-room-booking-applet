@@ -1,0 +1,70 @@
+.index_top_box {
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   flex-wrap: wrap;   /*换行*/
+   background-color: white;
+   padding: 18rpx;
+}
+.index_top_item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 25%;
+   justify-content: space-around;
+   margin-top: 45rpx;
+   border-bottom: 2rpx solid gray;
+}
+.index_images{
+  width: 120rpx;
+  height: 120rpx;
+}
+.top_text{
+  color: #7f7f7f;
+  font-weight: bold;
+  font-size: 9pt;
+}
+.choose_room{
+  margin: 30rpx 0rpx;
+  background-color: white;
+  padding: 30rpx;
+}
+.ofen_use_box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30rpx 0rpx;
+  border-bottom: 4rpx solid gray;
+  padding: 10rpx;
+}
+
+.stem_item{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction:row ;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 3rpx solid gainsboro;
+  padding: 10rpx;
+  justify-content: space-around;
+}
+.item1{
+  display: flex;
+  flex-direction: column;
+}
+.item2{
+  color: #0066FF;
+  margin-left: 10rpx;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.room_top_box{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-around;
+  background-color: lightgreen;
+  border-radius: 30rpx;
+  padding: 40rpx;
+}
+.room_top_item{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.room_top_image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.room_item{
+  margin-top: 6rpx;
+}
+.room_name{
+  text-align: center;
+  margin: 30rpx 30rpx;
+  font-weight: bold;
+  border-bottom:2rpx solid gray ;
+  padding: 10rpx;
+}
+.submit{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-top: 190rpx;
+}
+.instrument_top_item{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  margin: 50rpx 50rpx;
+  
+}
+.instrument_top_image{
+  width: 150rpx;
+  height: 150rpx;
+}
